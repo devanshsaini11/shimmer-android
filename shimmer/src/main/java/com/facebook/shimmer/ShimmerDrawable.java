@@ -54,7 +54,7 @@ public final class ShimmerDrawable extends Drawable {
           new PorterDuffXfermode(PorterDuff.Mode.SRC_ATOP));
     }
     updateShader();
-    updateValueAnimator();
+    // updateValueAnimator();
     invalidateSelf();
   }
 
