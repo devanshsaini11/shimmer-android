@@ -51,8 +51,7 @@ public final class ShimmerDrawable extends Drawable {
     mShimmer = shimmer;
     if (mShimmer != null) {
       mShimmerPaint.setXfermode(
-          new PorterDuffXfermode(
-              mShimmer.alphaShimmer ? PorterDuff.Mode.DST_IN : PorterDuff.Mode.SRC_IN));
+          new PorterDuffXfermode(PorterDuff.Mode.SRC_ATOP));
     }
     updateShader();
     updateValueAnimator();
